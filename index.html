@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Raphael</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- MENU LATERAL -->
+  <aside class="menu">
+    <h2>Raphael</h2>
+
+    <button onclick="mostrar('home')">🏠 Página inicial</button>
+    <button onclick="mostrar('sobre')">👤 Sobre</button>
+    <button onclick="mostrar('skills')">🎓 Formação</button>
+    <button onclick="mostrar('portfolio')">💼 Portfólio</button>
+    <button onclick="mostrar('contato')">📩 Contato</button>
+  </aside>
+
+  <!-- CONTEÚDO -->
+  <main class="conteudo">
+
+    <!-- HOME -->
+    <section id="home" class="ativo">
+      <h1>Raphael Paciencia</h1>
+      <h2>Analista de Dados em formação | Foco em soluções práticas</h2>
+
+      <p>
+        Transformo dados em decisões práticas. Meu foco não é apenas analisar números, 
+        mas resolver problemas reais com lógica, organização e tecnologia.
+      </p>
+
+      <p>
+        Atualmente estudo Ciência de Dados e desenvolvo projetos aplicados utilizando Python, SQL e análise de dados sociais.
+      </p>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+      <h1>Sobre</h1>
+
+      <p>
+        Tenho 31 anos e estou em transição de carreira para a área de dados, trazendo comigo uma base sólida em organização, responsabilidade e tomada de decisão adquirida ao longo da minha trajetória profissional.
+      </p>
+
+      <p>
+        Minha experiência com consultoria financeira e gestão me ensinou a lidar com dados na prática — controle, análise e otimização. Hoje, aplico essa mesma lógica com ferramentas modernas como Python, SQL e Power BI.
+      </p>
+
+      <p>
+        Mais do que aprender tecnologia, meu objetivo é utilizá-la para gerar impacto real, melhorar processos e apoiar decisões estratégicas.
+      </p>
+    </section>
+
+    <!-- FORMAÇÃO / SKILLS -->
+    <section id="skills">
+      <h1>Formação & Hard Skills</h1>
+
+      <div class="card">
+        <p><strong>Python</strong> → automação, análise de dados (Pandas, NumPy)</p>
+      </div>
+
+      <div class="card">
+        <p><strong>SQL</strong> → consultas, manipulação e organização de dados</p>
+      </div>
+
+      <div class="card">
+        <p><strong>Data Analysis</strong> → Excel, Power BI, visualização e insights</p>
+      </div>
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio">
+      <h1>Projetos</h1>
+
+      <div class="card">
+        <h2>Mapeamento da Exclusão Digital – Zona Norte (SP)</h2>
+
+        <p>
+          Projeto focado em identificar padrões de acesso à tecnologia em regiões da Zona Norte de São Paulo, com o objetivo de entender desigualdades digitais e gerar insights sociais.
+        </p>
+
+        <p>
+          <strong>Ferramentas:</strong> Python, análise de dados, visualização.
+        </p>
+
+        <p>
+          <strong>Impacto:</strong> análise voltada para identificação de desigualdade digital e geração de insights sociais.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Redes Neurais – Perceptron</h2>
+
+        <p>
+          Estudo e implementação de modelos básicos de redes neurais para classificação de dados, explorando fundamentos de machine learning.
+        </p>
+
+        <p>
+          <strong>Ferramentas:</strong> Python, lógica matemática, modelagem.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <h1>Contato</h1>
+
+      <p>
+        Estou aberto a oportunidades na área de dados e projetos que envolvam análise, automação e tecnologia.
+      </p>
+
+      <p>Email: rapha_pac@icloud.com</p>
+
+      <!-- FORMULÁRIO -->
+      <form id="form">
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="email" id="email" placeholder="Email">
+        <textarea id="mensagem" placeholder="Mensagem"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <!-- BOTÕES -->
+      <div class="botoes-contato">
+
+        <a href="https://wa.me/5511954638159?text=Olá Raphael, vi seu portfólio e gostaria de conversar." target="_blank" class="btn">
+          WhatsApp
+        </a>
+
+        <a href="curriculo.pdf" download class="btn">
+          Baixar Currículo
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

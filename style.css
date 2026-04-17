@@ -1,0 +1,178 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+}
+
+/* MENU LATERAL */
+.menu {
+  width: 260px;
+  height: 100vh;
+  background: #0f172a;
+  color: white;
+  padding: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu h2 {
+  margin-bottom: 30px;
+}
+
+/* BOTÕES MENU */
+.menu button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #cbd5f5;
+  padding: 12px;
+  margin: 6px 0;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.menu button:hover {
+  background: #1e293b;
+  color: white;
+}
+
+/* CONTEÚDO */
+.conteudo {
+  margin-left: 260px;
+  padding: 60px 100px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* SEÇÕES COM ANIMAÇÃO */
+section {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.ativo {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* TIPOGRAFIA */
+h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 650px;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 15px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* FORMULÁRIO */
+input, textarea {
+  display: block;
+  margin: 10px 0;
+  padding: 12px;
+  width: 320px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #0f172a;
+}
+
+/* BOTÕES PADRÃO */
+button {
+  padding: 10px 15px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1e293b;
+}
+
+/* BOTÕES LINK (WhatsApp e CV) */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #0f172a;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #1e293b;
+}
+
+/* BOTÕES CONTATO */
+.botoes-contato {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+/* RESPONSIVO (DÁ DIFERENCIAL NA NOTA) */
+@media (max-width: 768px) {
+  .menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .conteudo {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
